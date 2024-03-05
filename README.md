@@ -1,4 +1,7 @@
-COMOD - Conan's Modular Drawers
+# COMOD - Conan's Modular Drawers
+
+![](logo.svg)
+
 Yet another modular drawer organizer system.
 
 This drawer system is based on following principles:
