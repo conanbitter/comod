@@ -62,8 +62,8 @@ module drawer() {
                         box_backrounded(size = [ basic_drawer_width - drawer_wall_thickness * 2, basic_drawer_depth, basic_drawer_walls_height + 5 ], r = drawer_back_radius - drawer_wall_thickness);
             }
             difference() {
-                cube(size = [ basic_drawer_width, drawer_face_thickness, basic_drawer_full_height ]);
-                translate(v = [ 0, drawer_face_thickness, basic_drawer_full_height ])
+                cube(size = [ basic_drawer_width, drawer_face_thickness, basic_drawer_full_height + lip_height ]);
+                translate(v = [ 0, drawer_face_thickness, basic_drawer_full_height + lip_height ])
                     top_cutter(size = [ drawer_face_thickness, basic_drawer_width ], cut_offset = 0);
             }
         }
